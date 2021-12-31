@@ -1,0 +1,42 @@
+{
+   "sampleList":[
+      {
+         "sampleId":"34235325",
+         "gender":"M",
+         "barcodeName":"IonCode_1345",
+         "panel":"CanineTDv1",
+         "animalSpecies":"Canine",
+         "animalBreed":"",
+         "reportDate":"01/10/2021",
+         "referenceId": "REF22012354",
+         "refDate": "01/10/2021",
+         "customerData":{
+            "animalName":"",
+            "ownerName":"",
+            "vetName":"",
+            "clinicName":"",
+            "customerName":"",
+            "referenceId":"",
+            "referenceDate":""
+         },
+         "markerResults":[
+            {
+               "markerId":"AGSCPI001",
+               "class":"Disease",
+               "inheritancePattern":"XR",
+               "type":"DEL",
+               "genotype":"A/C",
+               "result":"noReport"
+            },
+            {
+               "markerId":"AGSCPI002",
+               "class":"Disease",
+               "inheritancePattern":"XR",
+               "type":"DEL",
+               "genotype":"A/C",
+               "result":"noReport"
+            }
+         ]
+      }
+   ]
+}
