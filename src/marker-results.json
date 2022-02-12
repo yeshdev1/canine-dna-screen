@@ -36,7 +36,24 @@
                "genotype":"A/C",
                "result":"noReport"
             }
-         ]
+         ],
+         "reportingAndInterpretation": {
+            "run_game": "AgriSeq Run 16122021",
+            "original_run_date": "Thursday, Dec 12th 2021",
+            "report_name": "AgriSeq Analysis 1812",
+            "dependencies": [
+               "AgriSum Toolkit #538",
+               "Variant Caller #515",
+               "Coverage Analysis #511"
+            ],
+            "latest_plugin_run_date": "Monday, Dec 16th 2021",
+            "total_samples_in_run": "384",
+            "total_panels_in_run": "3",
+            "reports_generated": "200 of 384",
+            "customer_data_uploaded": "232 of 384",
+            "customers_in_run": "3",
+            "samples_failed": "0 of 384"
+         }
       }
    ]
 }
