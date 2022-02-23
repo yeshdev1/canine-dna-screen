@@ -24,7 +24,7 @@ export const mergeTables = (currentFile, csvJsonFile) => {
             const referenceId = row['sampleId'];
             console.log(referenceId)
             const referenceIdExists = csvJsonFile.find(file => file['LabRefId'] === referenceId)
-            console.log(referenceIdExists)
+            row['reportDate'] = new Date().toLocaleDateString()
             if (referenceIdExists && referenceIdExists !== -1) {
                 combinedAll.push({
                     'sampleId':row['sampleId'],
