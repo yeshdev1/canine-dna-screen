@@ -3,7 +3,8 @@ import { Navbar,Container,Button } from 'react-bootstrap';
 import Table from './Table';
 import { useEffect, useState } from 'react';
 import FileReader from './FileReader';
-import marker_results from './marker-results.json';
+import marker_results from './out.json';
+import results from './marker-results.json';
 import { keyToNameMapping, mergeTables } from './keyToName';
 import Info from './Info';
 
@@ -20,7 +21,7 @@ function App() {
 
   // hook methods
   useEffect(() => {
-    const list = marker_results[Object.keys(marker_results)];
+    const list = results[Object.keys(results)];
     setReportingAndInterpretation(list[0].reportingAndInterpretation)
   });
   useEffect(() => {
@@ -66,7 +67,7 @@ function App() {
             href={
               "data:text/json;charset=utf-8," +
               encodeURIComponent(JSON.stringify(selectedRows,null,'\t'))
-            }
+            } 
             download="fileName_1.json"
             disabled={selectedRows.length === 0}
           >

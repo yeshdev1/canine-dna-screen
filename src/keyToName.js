@@ -21,8 +21,10 @@ export const mergeTables = (currentFile, csvJsonFile) => {
     let combinedAll = []
     currentFile.forEach(row => {
         if (row && Object.keys(row).length !== 0) {
-            const referenceId = row['referenceId'];
-            const referenceIdExists = csvJsonFile.find(file => file['ReferenceId'] === referenceId)
+            const referenceId = row['sampleId'];
+            console.log(referenceId)
+            const referenceIdExists = csvJsonFile.find(file => file['LabRefId'] === referenceId)
+            console.log(referenceIdExists)
             if (referenceIdExists && referenceIdExists !== -1) {
                 combinedAll.push({
                     'sampleId':row['sampleId'],

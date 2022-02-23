@@ -98,6 +98,9 @@ function AttributesTable(props) {
   }
 
   const makeBody = () => {
+      if (data.length === 0) {
+        return null
+      }
       return (
         <tbody>
             {data.map((row,index) => {
@@ -107,7 +110,7 @@ function AttributesTable(props) {
                         {Object.values(row).map((val,index) => {
                             return (
                                 <td key={index}>
-                                    {val !== '' ? val.substr(0,10):new Array(10).join( ' ' )}
+                                    {val !== '' ? val:new Array(10).join( ' ' )}
                                 </td>
                             )
                         })}
