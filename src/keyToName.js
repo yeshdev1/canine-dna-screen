@@ -1,6 +1,6 @@
 export const keyToNameMapping = {
     SAMPLE_ID: 'sampleId',
-    BARCODE_NAME: 'barcodeName',
+    BARCODE_NAME: 'barcode',
     SPECIES: 'animalSpecies',
     PANEL: 'panel',
     LAB_REF_ID: 'labRefId',
@@ -28,7 +28,7 @@ export const mergeTables = (currentFile, csvJsonFile) => {
             if (referenceIdExists && referenceIdExists !== -1) {
                 combinedAll.push({
                     'sampleId':row['sampleId'],
-                    'barcodeName':row['barcodeName'],
+                    'barcodeName':row['barcode'],
                     'animalSpecies':row['animalSpecies'],
                     'panel':row['panel'],
                     'labRefId':referenceIdExists['LabRefId'],
@@ -40,7 +40,7 @@ export const mergeTables = (currentFile, csvJsonFile) => {
             } else {
                 combinedAll.push({
                     'sampleId':row['sampleId'],
-                    'barcodeName':row['barcodeName'],
+                    'barcodeName':row['barcode'],
                     'animalSpecies':row['animalSpecies'],
                     'panel':row['panel'],
                     'labRefId':'',
